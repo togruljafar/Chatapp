@@ -1,0 +1,597 @@
+a:hover {
+	text-decoration: none;
+}
+.login-container {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.8), rgba(55,55,55,.6)), url(../images/bg3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+}
+.login-content {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 800px;
+	height: auto;
+	border: 2px solid #004159;
+	margin: 0 auto;
+    background: rgb(255,255,255);
+	border-radius: 20px;
+	padding: 20px;
+	overflow: hidden;
+	opacity: .8
+
+}
+.title {
+	text-align: center;
+	color: #004159;
+	font-weight: 700;
+	margin-top: 20px
+}
+.signUp-form {
+	padding-left: 5%;
+}
+.signIn-form {
+	padding-right: 5%;
+}
+.btn-math {
+	background-color: #004159;
+	color: #fff;
+}
+.signIn-wrapper, .signUp-wrapper {
+	width: 55%;
+	max-height: 100%;
+	position: relative;
+}
+.signUp-wrapper {
+	height: 500px;
+	/*display: none;*/
+	margin-right: 45%;
+}
+.signIn-wrapper {
+	display: none;
+	display: block;
+	min-height: 400px;
+	display: block;
+	margin-left: 45%;
+}
+.upContent {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	z-index: 9;
+	overflow: hidden;
+	background: #004159;
+}
+.show-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	transition: .3s
+}
+.signIn-wrap, .signUp-wrap {
+	width: 100%;
+	text-align: center;
+}
+h4.title {
+	color: #fff
+}
+button {
+	outline: none!important;
+}
+.sign-in, .sign-up {
+	width: 100px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	color: #004159;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.sign-in:hover, .sign-up:hover {
+	text-decoration: none;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5) inset;
+}
+.pl-25 {
+	padding-right: 25px;
+}
+.pr-25 {
+	padding-left: 25px;
+}
+.left {
+	transition: 1s;
+	left: 0;
+}
+.right {
+	transition: 1s;
+	right: 0;
+}
+.alert {
+	padding: .50rem 1rem;
+	font-size: 14px;
+}
+.create-post-form .alert-danger {
+	background: none;
+	border: none;
+}
+/*=============================*/
+/* Main Page */
+.main-page {
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+}
+.left-wrap, .post-container {
+	height: 100%;
+	padding: 25px 15px;
+}
+.left-wrap {	
+	width: 25%;
+	background-color: rgb(222,222,222);
+}
+.right-wrap {
+	width: 75%;
+	overflow: hidden;
+	background-color: rgb(240,240,240);
+}
+.profile {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: #004159;
+	padding: 10px 7px;
+	border-radius: 5px;
+	position: relative;
+}
+.profile-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile-desc {
+	padding-left: 15px;
+}
+.profile-desc p {
+	margin: 0;
+}
+.name {
+	color: #438ec8;
+	font-weight: 400;
+	line-height: 14px;
+	font-size: 14px;
+	padding-bottom: 5px; 
+}
+.profile .name {
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+}
+.professionalty {
+	line-height: 12px;
+	font-size: 12px;
+	color: #bbb
+}
+.signout-form, .show-btn {
+	position: absolute;
+	right: 10px;
+	color: #fff
+}
+.signout-form {
+	margin-bottom: 0;
+}
+.signout-btn {
+	outline: none;
+	border: none;
+	background: none;
+	color: #fff;
+	font-size: 20px;
+}
+.users {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	padding-bottom: 150px;
+}
+.users::-webkit-scrollbar {
+  display: none;
+} 
+.user {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px 7px;
+	border-radius: 5px;
+	position: relative;
+	border: 1px solid rgb(222,222,222);
+	cursor: pointer;
+	text-decoration: none!important;
+}
+.show-btn {
+	display: none;
+}
+.user:hover {
+	box-shadow: 2px 2px 7px rgb(155,155,155) inset;
+}
+.user:hover .show-btn {
+	display: block;
+}
+.pic {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* right section */
+.navbar {
+	background-color: #004159;
+	height: 70px;
+	width: 100%;
+}
+.page-title {
+	width: 100%;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+}
+.post-container {
+	max-width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-bottom: 100px;
+	overflow-y: scroll;
+}
+.post-container::-webkit-scrollbar {
+  display: none;
+} 
+.create-post {
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border: 1px solid #004159;
+	border-radius: 10px;
+	position: relative;
+}
+.create-post .profile-image {
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+	margin-right: 15px
+}
+.create-post-btn {
+	border: none;
+	outline: none;
+	width: calc(100% - 85px);
+	padding: 15px 20px;
+	border-radius: 15px;
+	background-color: rgb(222,222,222);
+}
+.share-post-btn {
+	border: none;
+	outline: none;
+	width: 100%;
+	text-align: center;
+	background-color: #b1dda1;
+	color: #fff;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px
+}
+.share-post-btn:hover {
+	text-decoration: none;
+}
+.create-post-btn span {
+	color: #004159
+}
+.d-none {
+	display: none;
+}
+.close-btn {
+	border: none;
+	background: none;
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 5px;
+}
+.close {
+	position: relative;
+	transform: rotate(135deg);
+}
+.close .slash {
+	width: 25px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #d21034;
+}
+.close .slash:last-child {
+	transform: rotate(90deg);
+}
+.textarea {
+	resize: none;
+}
+/* posts section */
+.posts {
+	width: 100%;
+	height: auto;
+}
+.post {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.post .name {
+	color: #fff
+}
+.post-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: #004159;
+	padding: 10px 7px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+.shared-date {
+	display: flex;
+	align-items: center;
+	color: rgb(200,200,200);
+	font-size: 12px;
+}
+.shared-date div:nth-child(n) {
+	margin-right: 5px;
+}
+.dot {
+	width: 2px;
+	height: 2px;
+	line-height: 100%;
+	border-radius: 50%;	
+	background-color: #fff
+}
+.post-main {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding: 20px 15px;
+	font-size: 14px;
+}
+.post-image {
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+.post-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.post-main span {
+	color: #004159;
+	font-size: 12px;
+}
+.post-action {
+	width: 100%;
+	height: 50px;
+	padding: 5px 30px;
+	background-color: rgb(222,222,222);
+	color: #004159;
+	border-top: 2px solid rgb(155,155,155);
+	border-radius: 0 0 5px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* Profile page */
+.profile-page-container {
+	width: 70%;
+	margin: 0 auto;
+}
+.header {
+	width: 100%;
+	position: relative;
+	padding-bottom: 30px;
+}
+.cover-photo {
+	width: 100%;
+	height: 55vh;
+	border-radius: 0 0 20px 20px;
+	background: #bdc3c7;
+    background: -webkit-linear-gradient(to bottom, #bdc3c7 60%, #2c3e50 );
+    background: linear-gradient(to bottom, #bdc3c7 60%, #2c3e50 );
+}
+.profile-img {
+	width: 170px;
+	height: 170px;
+	border: 2px solid #bdc3c7;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.profile-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile-page-container .profile-desc {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.profile-page-container .profile-desc .name {
+	font-size: 32px;
+}
+.profile-page-container .profile-desc .profesionalty {
+	margin-top: 10px;
+	color: rgb(155,155,155);
+}
+.nav {
+	border-radius: 5px;
+}
+.nav li {
+	padding: 10px 15px;
+	margin-right: 20px;
+}
+.nav .active {
+	border-bottom: 2px solid #004159;
+}
+.nav .active a {
+	color: #004159
+}
+.nav li span {
+	color: #438ec8
+}
+.nav a {
+	text-decoration: none;
+	color: rgb(175,175,175);
+}
+/*user page*/
+.profile-action {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.profile-action button:nth-child(n) {
+	border-radius: 10px;
+	margin-right: 15px;
+}
+.profile-action button:last-child {
+	margin-right: 0;
+}
+/*chat page*/
+.chat-page {
+	width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.chat-page .post-container {
+	width: 60%;
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 150px;
+}
+.chat-page .header {
+	background-color: #004159;
+	padding: 10px 50px;
+	width: 100%;
+}
+.chat-page .profile-image {
+	margin-right: 20px;
+}
+.chat-page .name {
+	color: #fff;
+	font-size: 17px;
+}
+.messages {
+	width: 100%;
+	position: relative;
+}
+.message {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+.msg-content {
+	max-width: 60%;
+	padding: 10px 25px 10px 15px;
+	background-color: #004159;
+	border-radius: 40px 10px 100px 10px;
+}
+.me-msg {
+	padding: 10px 15px 10px 25px;
+	margin-left: auto;
+	margin-right: 0;
+	border-radius: 10px 40px 10px 100px;
+	text-align: right;
+	background-color: #fff;
+}
+.me-msg .msg-text {
+	color: #004159;
+}
+.msg-text {
+	color: #fff;
+	font: 100 13px "Courier New", serif;
+	letter-spacing: .5px;
+	line-height: 16px;
+	margin-bottom: 0;
+}
+.send-time {
+	margin-bottom: 0;
+	color: #1496FC;
+	font-size: 10px;
+	line-height: 16px;
+}
+.create-msg {
+	width: 100%;
+	/*height: 50px;*/
+	background-color: #004159;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.create-msg-content {
+	width: calc(60% + 20px);
+	margin: 0 auto;
+	padding: 10px;
+}
+.create-msg form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.create-msg form .textarea {
+	width: 80%;
+	border: 1px solid #fff;
+	outline: none;
+	background: none;
+	color: #fff;
+	padding: 5px 10px;
+	font: 100 13px "Courier New", serif;
+}
+.create-msg form .send-btn {
+	width: 15%;
+	padding: 7px 0;
+	background-color: #fff;
+	color: #438ec8;
+	border: none;
+	outline: none;
+}
